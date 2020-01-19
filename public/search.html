@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ite=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link
+			rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+			crossorigin="">
+		</script>
+    <style>
+			#myMap {
+				height: 500px;
+			}
+		</style>
+    <title>Fetch and Graph CSV</title>
+  </head>
+  <body>
+
+    <div id="myMap"></div>
+    <script src="intro.js"></script>
+    <form>
+      <div class="form-group col-md-4">
+        <label for="procedures">Procedures</label>
+        <input type="text" name="search" id="search" list="procedures" class="form-control" />
+        <datalist id="procedures">
+          <option selected>Choose...</option>
+        </datalist>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <script>
+    const x = {{data}};
+    // console.log({{apc_data}});
+    getList();
+    async function getList() {
+      const response = await fetch('DRG_All_Original.csv');
+      const data = await response.text();
+      const table = data.split('\n').slice(1, length - 1);
+      table.forEach(async row => {
+        const columns = row.split(',');
+        const name = columns[0];
+        var option = document.createElement("option");
+        option.text = name;
+        var select = document.getElementById("procedures");
+        select.append(option);
+      });
+    }
+    </script>
+
+  </body>

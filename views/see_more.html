@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ite=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Medicare Costs</title>
+  </head>
+  <body>
+    <br>
+    <h2 id="hospital" align="center">{{ hospital_ }}</h2>
+    <h5 id="proc" align="center">{{ proc_ }}</h5>
+    <div id="type" hidden>{{ type }}</div>
+    <div id="state" hidden>{{ state }}</div>
+    <div id="price_diff"></div>
+    <div id="state_diff"></div> <br>
+    <div id="nat_diff"></div>
+    
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Current Selection</th>
+          <th scope="col">2017</th>
+          <th scope="col">2016</th>
+          <th scope="col">2015</th>
+          <th scope="col">State</th>
+          <th scope="col">National</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Total charges</th>
+          <th id="charges_2017" align="center"></th>
+          <td id="charges_2016" class="cell"></td>
+          <td id="charges_2015" class="cell"></td>
+          <td id="charges_state" class="cell"></td>
+          <td id="charges_nat" class="cell"></td>
+        </tr>
+        <tr>
+          <th scope="row">Total Payment</th>
+          <th id="payment_2017" align="center"></th>
+          <td id="payment_2016" class="cell"></td>
+          <td id="payment_2015" class="cell"></td>
+          <td id="payment_state" class="cell"></td>
+          <td id="payment_nat" class="cell"></td>
+        </tr>
+        <tr>
+          <th scope="row">Medicare Payment</th>
+          <th id="medicare_2017" align="center"></th>
+          <td id="medicare_2016" class="cell"></td>
+          <td id="medicare_2015" class="cell"></td>
+          <td id="medicare_state" class="cell"></td>
+          <td id="medicare_nat" class="cell"></td>
+        </tr>
+        <tr>
+          <th scope="row">Out of pocket</th>
+          <th id="pocket_2017" align="center"></th>
+          <td id="pocket_2016" class="cell"></td>
+          <td id="pocket_2015" class="cell"></td>
+          <td id="pocket_state" class="cell"></td>
+          <td id="pocket_nat" class="cell"></td>
+        </tr>
+        
+        <div id='container'></div>
+      </tbody>
+    </table>
+  </body>
+
+  <script>
+    document.getElementById("type").style.display = "none";
+    document.getElementById("state").style.display = "none";
+    document.getElementById("proc").style.color = "#434348";
+    const hospital = document.getElementById('hospital').textContent;
+    const proc = document.getElementById('proc').textContent;
+    const type = document.getElementById('type').textContent;
+    const state = document.getElementById('state').textContent;
+
+    document.getElementById('hospital').innerHTML = decodeURIComponent(document.getElementById('hospital').textContent);
+    if (type == 'apc') {
+      document.getElementById('proc').innerHTML = decodeURIComponent(document.getElementById('proc').textContent);
+    }
+    else if (type == 'drg') {
+      document.getElementById('proc').innerHTML = decodeURIComponent(document.getElementById('proc').textContent).substring(6);
+    }
+    let state_avg = [], nat_avg = [];
+    let url_2017, url_2016, url_2015, url_nat, url_state;
+    let charges = [], payment = [], medicare = [];
+    let data_2017, data_2016, data_2015, data_nat;
+    let json_2017, json_2016, json_2015, json_nat;
+    
+    getNumber();
+    async function getNumber() {
+      if (type == 'drg') {
+        url_2017 = `https://data.cms.gov/resource/tcsp-6e99.json?provider_name=${hospital}&drg_definition=${proc}`;
+        url_2016 = `https://data.cms.gov/resource/fm2n-hjj6.json?provider_name=${hospital}&drg_definition=${proc}`;
+        url_2015 = `https://data.cms.gov/resource/w2du-it53.json?provider_name=${hospital}&drg_definition=${proc}`;
+        url_state = `https://data.cms.gov/resource/q5hc-zvkx.json?state_desc=${state}&drg_desc=${proc}`;
+        url_nat = `https://data.cms.gov/resource/ijhk-r7bw.json?drg_desc=${proc}`;
+      }
+      else if (type == 'apc') {
+        url_2017 = `https://data.cms.gov/resource/fmbt-qrrw.json?provider_name=${hospital}&apc_desc=${proc}`;
+        url_2016 = `https://data.cms.gov/resource/7hhk-4rbf.json?provider_name=${hospital}&apc_description=${proc}`;
+        url_2015 = `https://data.cms.gov/resource/qwn3-t5u6.json?provider_name=${hospital}&apc_description=${proc}`;
+        url_state = `https://data.cms.gov/resource/ksn5-wptb.json?state=${state}&apc_desc=${proc}`;
+        url_nat = `https://data.cms.gov/resource/k83v-iv36.json?apc_desc=${proc}`;
+      }
+
+      data_2017 = await fetch(url_2017); json_2017 = await data_2017.json();
+      data_2016 = await fetch(url_2016); json_2016 = await data_2016.json();
+      data_2015 = await fetch(url_2015); json_2015 = await data_2015.json();
+      data_state = await fetch(url_state); json_state = await data_state.json();
+      data_nat = await fetch(url_nat); json_nat = await data_nat.json();
+
+      if (type == 'drg') {
+        if (json_2017.length != 0) {
+          charges.push(await parseFloat(json_2017[0]['average_covered_charges']));
+          payment.push(await parseFloat(json_2017[0]['average_total_payments']));
+          medicare.push(await parseFloat(json_2017[0]['average_medicare_payments']));
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_2016.length != 0) {
+          charges.push(await parseFloat(json_2016[0]['average_covered_charges']));
+          payment.push(await parseFloat(json_2016[0]['average_total_payments']));
+          medicare.push(await parseFloat(json_2016[0]['average_medicare_payments']));
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_2015.length != 0) {
+          charges.push(await parseFloat(json_2015[0]['average_covered_charges']));
+          payment.push(await parseFloat(json_2015[0]['average_total_payments']));
+          medicare.push(await parseFloat(json_2015[0]['average_medicare_payments']));
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_state.length != 0) {
+          state_avg.push(json_state[0]['average_covered_charges']);
+          state_avg.push(json_state[0]['average_total_payments']);
+          state_avg.push(json_state[0]['average_medicare_payments']);
+        }
+        else {
+          state_avg.push(-9999);
+        }
+        if (json_nat.length != 0) {
+          nat_avg.push(json_nat[0]['average_covered_charges']);
+          nat_avg.push(json_nat[0]['average_medicare_payments']);
+          nat_avg.push(json_nat[0]['average_medicare_reimbursement']);
+        }
+        else {
+          state_avg.push(-9999);
+        }
+      }
+      else if (type == 'apc') {
+        if (json_2017.length != 0) {
+          charges.push(await parseFloat(json_2017[0]['average_total_submitted']));          
+          payment.push(await parseFloat(json_2017[0]['average_medicare_allowed']));
+          medicare.push(await parseFloat(json_2017[0]['average_medicare_payment']));
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_2016.length != 0) {
+          charges.push(await json_2016[0]['average_estimated_total_submitted_charges']);
+          payment.push(await json_2016[0]['average_medicare_allowed_amount']);
+          medicare.push(await json_2016[0]['average_medicare_payment_amount']);
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_2015.length != 0) {
+          charges.push(await json_2015[0]['average_estimated_total_submitted_charges']);
+          payment.push(await json_20155[0]['average_medicare_allowed_amount']);
+          medicare.push(await json_2015[0]['average_medicare_payment_amount']);
+        }
+        else {
+          charges.push(-9999); payment.push(-9999); medicare.push(-9999);
+        }
+        if (json_state.length != 0) {
+          state_avg.push(await parseFloat(json_state[0]['average_total_submitted']));
+          state_avg.push(await parseFloat(json_state[0]['average_medicare_allowed']));
+          state_avg.push(await parseFloat(json_state[0]['average_medicare_payment']));
+        }
+        else {
+          state_avg.push(-9999);
+        }
+        if (json_nat.length != 0) {
+          nat_avg.push(await parseFloat(json_nat[0]['average_total_submitted']));
+          nat_avg.push(await parseFloat(json_nat[0]['average_medicare_allowed']));
+          nat_avg.push(await parseFloat(json_nat[0]['average_medicare_payment']));
+        }
+        else {
+          state_avg.push(-9999);
+        }
+      }
+
+      let state_diff = [];
+      let nat_diff = [];
+
+      state_diff.push(((charges[0] - state_avg[0]) / charges[0] * 100).toFixed(2));
+      state_diff.push(((payment[0] - state_avg[1]) / payment[0] * 100).toFixed(2));
+      state_diff.push(((medicare[0] - state_avg[2]) / medicare[0] * 100).toFixed(2));
+      nat_diff.push(((charges[0] - nat_avg[0]) / charges[0] * 100).toFixed(2));
+      nat_diff.push(((payment[0] - nat_avg[1]) / payment[0] * 100).toFixed(2));
+      nat_diff.push(((medicare[0] - nat_avg[2]) / medicare[0] * 100).toFixed(2));
+
+      const pocket_17 = (payment[0] - medicare[0]).toFixed(2);      
+      const pocket_state = (state_avg[1] - state_avg[2]).toFixed(2);
+      const pocket_nat = (nat_avg[1] - nat_avg[2]).toFixed(2);
+      let pocket_nat_17 = ((pocket_17 - pocket_nat) / pocket_17 * 100).toFixed(2);
+      let pocket_state_17 = ((pocket_17 - pocket_state) / pocket_17 * 100).toFixed(2)
+      
+      document.getElementById('charges_2017').innerHTML = `$ ${charges[0].toFixed(2)}`;
+      document.getElementById('payment_2017').innerHTML = `$ ${payment[0].toFixed(2)}`;
+      document.getElementById('medicare_2017').innerHTML = `$ ${medicare[0].toFixed(2)}`;
+      document.getElementById('pocket_2017').innerHTML = `$ ${pocket_17}`;
+
+      document.getElementById('charges_state').innerHTML = `${((state_avg[0] - charges[0]) / charges[0] * 100).toFixed(2)}%`;
+      document.getElementById('payment_state').innerHTML = `${((state_avg[1] - payment[0]) / payment[0] * 100).toFixed(2)}%`;
+      document.getElementById('medicare_state').innerHTML = `${((state_avg[2] - medicare[0]) / medicare[0] * 100).toFixed(2)}%`;
+      document.getElementById('pocket_state').innerHTML = `${((pocket_state - pocket_17) / pocket_17 * 100).toFixed(2)}%`;
+      
+      document.getElementById('charges_nat').innerHTML = `${((nat_avg[0] - charges[0]) / charges[0] * 100).toFixed(2)}%`;
+      document.getElementById('payment_nat').innerHTML = `${((nat_avg[1] - payment[0]) / payment[0] * 100).toFixed(2)}%`;
+      document.getElementById('medicare_nat').innerHTML = `${((nat_avg[2] - medicare[0]) / medicare[0] * 100).toFixed(2)}%`;
+      document.getElementById('pocket_nat').innerHTML = `${((pocket_nat - pocket_17) / pocket_17 * 100).toFixed(2)}%`;
+
+      const price_difference = document.getElementById('state_diff');
+      if (charges[1] > 0) {
+        const pocket_16 = (payment[1] - medicare[1]).toFixed(2);
+        const pocket_diff_17_16 = (-(pocket_17 - pocket_16) / pocket_17 * 100).toFixed(2);
+        const total_diff_17_16 = (-(charges[0] - charges[1]) / charges[0] * 100).toFixed(2);
+        const payment_diff_17_16 = (-(payment[0] - payment[1]) / payment[0] * 100).toFixed(2);
+        const medicare_diff_17_16 = (-(medicare[0] - medicare[1]) / payment[0] * 100).toFixed(2);
+        document.getElementById('charges_2016').innerHTML = `${total_diff_17_16}%`;
+        document.getElementById('payment_2016').innerHTML = `${payment_diff_17_16}%`;
+        document.getElementById('medicare_2016').innerHTML = `${medicare_diff_17_16}%`;
+        document.getElementById('pocket_2016').innerHTML = `${pocket_diff_17_16}%`;        
+      }
+      else {
+        document.getElementById('charges_2016').innerHTML = `N/A`;
+        document.getElementById('payment_2016').innerHTML = `N/A`;
+        document.getElementById('medicare_2016').innerHTML = `N/A`;
+        document.getElementById('pocket_2016').innerHTML = `N/A`;
+      }
+      if (charges[2] > 0) {
+        const pocket_15 = (payment[2] - medicare[2]).toFixed(2);
+        const pocket_diff_16_15 = (-(pocket_17 - pocket_15) / pocket_17 * 100).toFixed(2);
+        const total_diff_16_15 = (-(charges[0] - charges[2]) / charges[0] * 100).toFixed(2);
+        const payment_diff_16_15 = (-(payment[0] - payment[2]) / payment[0] * 100).toFixed(2);
+        const medicare_diff_16_15 = (-(medicare[0] - medicare[2]) / payment[0] * 100).toFixed(2);
+        document.getElementById('charges_2015').innerHTML = `${total_diff_16_15}%`;
+        if (document.getElementById('charges_2015').value > 0) {
+          document.getElementById('charges_2015').style.color = 'green';
+        }
+        else {
+          document.getElementById('charges_2015').style.color = 'red';
+        }
+        document.getElementById('payment_2015').innerHTML = `${payment_diff_16_15}%`;
+        document.getElementById('medicare_2015').innerHTML = `${medicare_diff_16_15}%`;
+        document.getElementById('pocket_2015').innerHTML = `${pocket_diff_16_15}%`;
+      }
+      else {
+        document.getElementById('charges_2015').innerHTML = `N/A`;
+        document.getElementById('payment_2015').innerHTML = `N/A`;
+        document.getElementById('medicare_2015').innerHTML = `N/A`;
+        document.getElementById('pocket_2015').innerHTML = `N/A`;
+      }      
+
+      const cells = await document.getElementsByClassName('cell');
+      for (var cell of cells) {
+        if (parseFloat(cell.innerText) >= 0) {
+          cell.style.color = 'green';
+        }
+        else if (parseFloat(cell.innerText) < 0) {
+          cell.style.color = 'red';
+        }
+      }
+      
+      let to_plot = [];
+      let outOfPocket = [];
+      let charges_float = [], payment_float = [], medicare_float = [];
+      let all_categories = [charges, payment, medicare];
+      let categories_name = ['avg_charges','avg_outOfPocket','avg_medicare'];
+      let ymax = 0;
+      for (year in charges) {
+        if (parseFloat(charges[year]) > ymax) {
+          ymax = parseFloat(charges[year]);
+        }
+        else if (parseFloat(charges[year]) < 0) {
+          // charges[year] = 0;
+          charges_float.push(0);
+        }
+        else {
+          charges_float.push(parseFloat(charges[year]).toFixed(2));
+          // charges[year] = parseFloat(charges[year]).toFixed(2);
+        }
+      }
+      for (year in payment) {
+        if (payment[year] > ymax) {
+          ymax = payment[year];
+        }
+        if (payment[year] < 0){
+          payment_float.push(0);
+        }else {
+          payment_float.push(parseFloat(payment[year]).toFixed(2));
+        }
+      }
+      for (year in medicare) {
+        if (medicare[year] > ymax) {
+          ymax = medicare[year];
+        }
+        if (medicare[year] < 0){
+          medicare_float.push(0);
+        } else {
+          medicare_float.push(parseFloat(medicare[year]).toFixed(2));
+        }
+      }
+
+      for (let item =0; item<3; item++) {
+        let categories = {};
+        if (item != 1) {
+          categories['name'] = categories_name[item];
+          categories['data'] = all_categories[item];
+        } else {
+          for (i=0; i<3; i++) {
+            outOfPocket.push(payment[i] - medicare[i]);
+          }
+          categories['name'] = categories_name[item];
+          categories['data'] = outOfPocket;
+        }
+        to_plot.push(categories);
+      }
+
+      charges_float = charges.map(Number);
+      medicare_float = medicare.map(Number);
+      
+      for (i = 0; i < 3; ++i) {
+        charges_float[i] = Math.round( charges_float[i] * 1e2 ) / 1e2;
+        medicare_float[i] = Math.round( medicare_float[i] * 1e2 ) / 1e2;
+        outOfPocket[i] = Math.round( outOfPocket[i] * 1e2 ) / 1e2;
+      }
+
+      let to_plot_float = [];
+      let x = {'name': 'avg_charges', 'data': charges_float};
+      to_plot_float.push(x);
+      let y = {'name': 'avg_outOfPocket', 'data': outOfPocket};
+      to_plot_float.push(y);
+      let z = {'name': 'avg_medicare', 'data': medicare_float};
+      to_plot_float.push(z);
+
+      Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Medicare statistics from 2015 to 2017'
+        },
+        xAxis: {
+            categories: [2017,2016,2015]
+        },
+        yAxis: {
+            min: 0,
+            // max: ymax,
+            title: {
+                text: ''
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: ( // theme
+                        Highcharts.defaultOptions.title.style &&
+                        Highcharts.defaultOptions.title.style.color
+                    ) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor:
+                Highcharts.defaultOptions.legend.backgroundColor || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: to_plot_float
+      });
+    } 
+  </script>

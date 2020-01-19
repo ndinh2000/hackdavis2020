@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ite=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link
+			rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""
+		/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script
+			src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+			crossorigin="">
+		</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <style>
+			#myMap {
+				height: 85vh;
+        width: 100%;
+			}
+		</style>
+    <title>Hospital Costs</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1>How are you feeling today?</h1>
+    </div>
+    <div class="container" align="center">
+            <label for="procedures">Pick your procedure</label>
+            <input role='combobox' type="text" name="search" id="search" list="procedures" />
+            <datalist id="procedures">
+            </datalist>
+          <button id="submit" class="btn btn-primary" disabled=True>Submit</button>
+        <br>
+          <div id="myMap"></div>        
+    </div>
+    <script>      
+
+    // Get starting position of user
+    const Http = new XMLHttpRequest();
+    let lat, lon;
+    let charges = [], payment = [], medicare = [], charges_float = [];
+    let mymap;
+    var markersLayer = new L.LayerGroup();
+    var markersLayer2 = new L.LayerGroup();
+    if ('geolocation' in navigator) {
+      console.log('geolocation available');
+      navigator.geolocation.getCurrentPosition(position => {
+        lat = position.coords.latitude;
+        lon = position.coords.longitude;
+      })
+    }
+
+    // Get list of hospitals from csv file
+    getList();
+    async function getList() {
+      const response = await fetch('all_services.csv');
+      const data = await response.text();
+      const table = data.split('\n').slice(2, length - 1);
+      table.forEach(async row => {
+        const columns = row.split(',');
+        const name = columns[1];        
+        var option = document.createElement("option");
+        option.text = name;
+        var select = document.getElementById("procedures");
+        select.append(option);
+      });
+    }
+
+    function CheckListed( txtSearch  ) {
+     var objList = document.getElementById("procedures")  ;
+     for (var i = 0; i < objList.options.length; i++) {
+      if ( objList.options[i].value.trim().toLowerCase()== txtSearch.trim().toLowerCase() ) {
+         return true }
+      }
+        return false;
+    }
+
+    // Get data from submit button
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelector('#search').onkeyup = () => {
+      if (CheckListed(document.querySelector('#search').value))
+          document.querySelector('#submit').disabled = false;
+      else
+          document.querySelector('#submit').disabled = true;
+        };
+      const button = document.getElementById('submit');
+      let json;
+      let firstTime = true;
+      button.addEventListener('click', async event => {
+        const search = document.getElementById('search').value;
+        const response_text = await fetch('all_services.csv');
+        const data_text = await response_text.text();
+        const table = await data_text.split('\n').slice(1, length - 1);
+        let str; let type;
+        for (var row of table) {
+          const columns = row.split(',');
+          if (columns[1].toLowerCase() == search.toLowerCase()) {
+            const name_temp = columns[0];
+            const data = { name_temp };
+            const options = {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            };
+            const response_temp = await fetch('/querify', options);
+            const json = await response_temp.json();
+            str = json;
+            type = columns[2];
+            break;
+          }
+        }
+        const data = { str, type };
+        const options = {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        };
+        const response = await fetch('/search', options);
+        json = await response.json();
+        document.getElementById('search').value='';
+        document.querySelector('#submit').disabled = true;
+
+        if (mymap) {
+          markersLayer.clearLayers();
+        }
+        
+
+        if (firstTime) {
+          mymap = L.map('myMap').setView([lat, lon], 8);
+          const attribution =
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+          const tileUrl = 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png';
+          const tiles = L.tileLayer(tileUrl, { attribution });
+          tiles.addTo(mymap);
+          firstTime = false;
+        }
+
+        const circle = await L.circle([lat, lon], {radius: 40234});
+        circle.bindPopup(`25 miles radius around you`);
+        circle.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        circle.on('mouseout', function (e) {
+            this.closePopup();
+        });
+        markersLayer2.addLayer(circle);
+        markersLayer2.addTo(mymap);
+
+        let avg_charges, avg_payment, avg_medicare, state, pocket;
+        for (item of json) {
+          const hospital = item['provider_name'];
+          const address = item['provider_street_address'];
+          const zip = item['provider_zip_code'];
+
+          if (type.trim().localeCompare('drg') == 0) {
+            avg_charges = parseFloat(item['average_covered_charges']).toFixed(2);
+            avg_payment = parseFloat(item['average_total_payments']).toFixed(2);
+            avg_medicare = parseFloat(item['average_medicare_payments']).toFixed(2);
+          }
+          else if (type.trim().localeCompare('apc') == 0) {
+            avg_charges = parseFloat(item['average_total_submitted']).toFixed(2);
+            avg_payment = parseFloat(item['average_medicare_allowed']).toFixed(2);
+            avg_medicare = parseFloat(item['average_medicare_payment']).toFixed(2);
+          }
+          state = item['provider_state'];
+          charges.push(avg_charges);
+          charges_float.push(Math.round( avg_charges * 1e2 ) / 1e2);
+          pocket = (avg_payment - avg_medicare).toFixed(2);
+        
+          const url = `http://geoservices.tamu.edu/Services/Geocode/WebService/GeocoderWebServiceHttpNonParsed_V04_01.aspx?streetAddress=${address}&zip=${zip}&apikey=demo&format=json&allowTies=false&tieBreakingStrategy=flipACoin&includeHeader=true&notStore=false&version=4.01`;
+          const geo = await fetch(`http://geoservices.tamu.edu/Services/Geocode/WebService/GeocoderWebServiceHttpNonParsed_V04_01.aspx?streetAddress=${address}&zip=${zip}&apikey=demo&format=json&allowTies=false&tieBreakingStrategy=flipACoin&includeHeader=true&notStore=false&version=4.01`);
+          const geo_data = await geo.json();
+          const hos_lat = geo_data['OutputGeocodes'][0]['OutputGeocode']['Latitude'];
+          const hos_lon = geo_data['OutputGeocodes'][0]['OutputGeocode']['Longitude'];
+          const marker = await L.marker([hos_lat, hos_lon]);
+                   
+          var template = `<form action='/see_more' id='table' method='POST'>\
+                <input type="hidden" name="hospital" value="123" />\
+                <table class="table">\
+                  <thread>\
+                    <tr>\
+                      <th scope="col" id="hospital" value=${hospital}>${hospital}</th>\
+                    </tr>\
+                    <tr>\
+                      <th scope="col" name="proc" id="proc" value="${search}">${search}</th>\
+                    </tr>\
+                  </thread>\
+                  <tbody>\
+                    <tr>\
+                    <td>Average charges</td>\
+                    <td align="right">$${avg_charges}</td>\
+                    </tr>\
+                    <tr>\
+                      <td>Average payment</td>\
+                      <td align="right">$${avg_payment}</td>\
+                    </tr>\
+                    <tr>\
+                      <td>Average medicare payment</td>\
+                      <td align="right">$${avg_medicare}</td>\
+                    </tr>\
+                    <tr>\
+                      <td>Out of pocket cost</td>\
+                      <td align="right">$${pocket}</td>\
+                    </tr>\
+                </table>\
+                <a href='/see_more/${hospital}+${str}+${type}+${state}' target="_blank">See more</a>
+                <button id="see_more_submit" hidden action='/api' type="button">See more</button>\
+              </form>`;
+              marker.bindPopup(template);
+              marker.on('click', () => {                
+                const data_see_more = { hospital, str, type, state };
+                const options_see_more = {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(data_see_more)
+                };
+                const see_more = document.getElementById("see_more_submit");
+                see_more.addEventListener('click', () => {
+                 fetch('/see_more', options_see_more);
+                  const url_redirect = `/see_more/${hospital}+${str}+${type}`;
+                  window.open(url_redirect);
+                });
+              });              
+              markersLayer.addLayer(marker);
+              markersLayer.addTo(mymap);            
+          };
+      });      
+    });
+    </script>
+  </body>

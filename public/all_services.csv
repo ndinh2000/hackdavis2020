@@ -1,0 +1,536 @@
+search,options,type
+Level 2 Excision/ Biopsy/ Incision and Drainage,Level 2 Excision/ Biopsy/ Incision and Drainage,apc
+Level 3 Excision/ Biopsy/ Incision and Drainage,Level 3 Excision/ Biopsy/ Incision and Drainage,apc
+Level 1 Breast/Lymphatic Surgery and Related Procedures,Level 1 Breast/Lymphatic Surgery and Related Procedures,apc
+Level 2 Breast/Lymphatic Surgery and Related Procedures,Level 2 Breast/Lymphatic Surgery and Related Procedures,apc
+Level 2 Musculoskeletal Procedures,Level 2 Musculoskeletal Procedures,apc
+Level 3 Musculoskeletal Procedures,Level 3 Musculoskeletal Procedures,apc
+Level 4 Musculoskeletal Procedures,Level 4 Musculoskeletal Procedures,apc
+Level 5 Musculoskeletal Procedures,Level 5 Musculoskeletal Procedures,apc
+Level 3 Airway Endoscopy,Level 3 Airway Endoscopy,apc
+Level 4 Airway Endoscopy,Level 4 Airway Endoscopy,apc
+Level 5 Airway Endoscopy,Level 5 Airway Endoscopy,apc
+Level 4 ENT Procedures,Level 4 ENT Procedures,apc
+Level 5 ENT Procedures,Level 5 ENT Procedures,apc
+Level 1 Endovascular Procedures,Level 1 Endovascular Procedures,apc
+Level 2 Endovascular Procedures,Level 2 Endovascular Procedures,apc
+Level 3 Endovascular Procedures,Level 3 Endovascular Procedures,apc
+Level 4 Endovascular Procedures,Level 4 Endovascular Procedures,apc
+Level 3 Electrophysiologic Procedures,Level 3 Electrophysiologic Procedures,apc
+Level 2 Pacemaker and Similar Procedures,Level 2 Pacemaker and Similar Procedures,apc
+Level 3 Pacemaker and Similar Procedures,Level 3 Pacemaker and Similar Procedures,apc
+Level 1 ICD and Similar Procedures,Level 1 ICD and Similar Procedures,apc
+Level 2 ICD and Similar Procedures,Level 2 ICD and Similar Procedures,apc
+Level 2 Upper GI Procedures,Level 2 Upper GI Procedures,apc
+Level 3 Upper GI Procedures,Level 3 Upper GI Procedures,apc
+Level 3 Lower GI Procedures,Level 3 Lower GI Procedures,apc
+Complex GI Procedures,Complex GI Procedures,apc
+Abdominal/Peritoneal/Biliary and Related Procedures,Abdominal/Peritoneal/Biliary and Related Procedures,apc
+Level 1 Laparoscopy and Related Services,Level 1 Laparoscopy and Related Services,apc
+Level 2 Laparoscopy and Related Services,Level 2 Laparoscopy and Related Services,apc
+Level 3 Urology and Related Services,Level 3 Urology and Related Services,apc
+Level 4 Urology and Related Services,Level 4 Urology and Related Services,apc
+Level 5 Urology and Related Services,Level 5 Urology and Related Services,apc
+Level 6 Urology and Related Services,Level 6 Urology and Related Services,apc
+Level 7 Urology and Related Services,Level 7 Urology and Related Services,apc
+Level 4 Gynecologic Procedures,Level 4 Gynecologic Procedures,apc
+Level 5 Gynecologic Procedures,Level 5 Gynecologic Procedures,apc
+Level 1 Nerve Procedures,Level 1 Nerve Procedures,apc
+Level 2 Neurostimulator and Related Procedures,Level 2 Neurostimulator and Related Procedures,apc
+Level 4 Neurostimulator and Related Procedures,Level 4 Neurostimulator and Related Procedures,apc
+Level 1 Intraocular Procedures,Level 1 Intraocular Procedures,apc
+Level 2 Intraocular Procedures,Level 2 Intraocular Procedures,apc
+Comprehensive Observation Services,Comprehensive Observation Services,apc
+Level 6 Musculoskeletal Procedures,Level 6 Musculoskeletal Procedures,apc
+Cochlear Implant Procedure,Cochlear Implant Procedure,apc
+Level 6 Gynecologic Procedures,Level 6 Gynecologic Procedures,apc
+Level 3 Neurostimulator and Related Procedures,Level 3 Neurostimulator and Related Procedures,apc
+Level 7 Radiation Therapy,Level 7 Radiation Therapy,apc
+Level 2 Electrophysiologic Procedures,Level 2 Electrophysiologic Procedures,apc
+Level 4 Pacemaker and Similar Procedures,Level 4 Pacemaker and Similar Procedures,apc
+Level 2 Nerve Procedures,Level 2 Nerve Procedures,apc
+Implantation of Drug Infusion Device,Implantation of Drug Infusion Device,apc
+Level 3 Breast/Lymphatic Surgery and Related Procedures,Level 3 Breast/Lymphatic Surgery and Related Procedures,apc
+Implantation Wireless PA Pressure Monitor,Implantation Wireless PA Pressure Monitor,apc
+Level 4 Breast/Lymphatic Surgery and Related Procedures,Level 4 Breast/Lymphatic Surgery and Related Procedures,apc
+Level 3 Intraocular Procedures,Level 3 Intraocular Procedures,apc
+Level 1 Electrophysiologic Procedures,Level 1 Electrophysiologic Procedures,apc
+023 - CRANIOTOMY W MAJOR DEVICE IMPLANT OR ACUTE CNS PDX W MCC OR CHEMOTHE,Craniotomy w major device implant or acute cns pdx w mcc or chemothe,drg
+025 - CRANIOTOMY & ENDOVASCULAR INTRACRANIAL PROCEDURES W MCC,Craniotomy & endovascular intracranial procedures w mcc,drg
+027 - CRANIOTOMY & ENDOVASCULAR INTRACRANIAL PROCEDURES W/O CC/MCC,Craniotomy & endovascular intracranial procedures w/o cc/mcc,drg
+037 - EXTRACRANIAL PROCEDURES W MCC,Extracranial procedures w mcc,drg
+038 - EXTRACRANIAL PROCEDURES W CC,Extracranial procedures w cc,drg
+039 - EXTRACRANIAL PROCEDURES W/O CC/MCC,Extracranial procedures w/o cc/mcc,drg
+054 - NERVOUS SYSTEM NEOPLASMS W MCC,Nervous system neoplasms w mcc,drg
+056 - DEGENERATIVE NERVOUS SYSTEM DISORDERS W MCC,Degenerative nervous system disorders w mcc,drg
+057 - DEGENERATIVE NERVOUS SYSTEM DISORDERS W/O MCC,Degenerative nervous system disorders w/o mcc,drg
+064 - INTRACRANIAL HEMORRHAGE OR CEREBRAL INFARCTION W MCC,Intracranial hemorrhage or cerebral infarction w mcc,drg
+065 - INTRACRANIAL HEMORRHAGE OR CEREBRAL INFARCTION W CC OR TPA IN 24 HRS,Intracranial hemorrhage or cerebral infarction w cc or tpa in 24 hrs,drg
+066 - INTRACRANIAL HEMORRHAGE OR CEREBRAL INFARCTION W/O CC/MCC,Intracranial hemorrhage or cerebral infarction w/o cc/mcc,drg
+069 - TRANSIENT ISCHEMIA,Transient ischemia,drg
+070 - NONSPECIFIC CEREBROVASCULAR DISORDERS W MCC,Nonspecific cerebrovascular disorders w mcc,drg
+071 - NONSPECIFIC CEREBROVASCULAR DISORDERS W CC,Nonspecific cerebrovascular disorders w cc,drg
+073 - CRANIAL & PERIPHERAL NERVE DISORDERS W MCC,Cranial & peripheral nerve disorders w mcc,drg
+074 - CRANIAL & PERIPHERAL NERVE DISORDERS W/O MCC,Cranial & peripheral nerve disorders w/o mcc,drg
+091 - OTHER DISORDERS OF NERVOUS SYSTEM W MCC,Other disorders of nervous system w mcc,drg
+092 - OTHER DISORDERS OF NERVOUS SYSTEM W CC,Other disorders of nervous system w cc,drg
+100 - SEIZURES W MCC,Seizures w mcc,drg
+101 - SEIZURES W/O MCC,Seizures w/o mcc,drg
+103 - HEADACHES W/O MCC,Headaches w/o mcc,drg
+149 - DYSEQUILIBRIUM,Dysequilibrium,drg
+163 - MAJOR CHEST PROCEDURES W MCC,Major chest procedures w mcc,drg
+164 - MAJOR CHEST PROCEDURES W CC,Major chest procedures w cc,drg
+166 - OTHER RESP SYSTEM O.R. PROCEDURES W MCC,Other resp system o.r. procedures w mcc,drg
+176 - PULMONARY EMBOLISM W/O MCC,Pulmonary embolism w/o mcc,drg
+177 - RESPIRATORY INFECTIONS & INFLAMMATIONS W MCC,Respiratory infections & inflammations w mcc,drg
+180 - RESPIRATORY NEOPLASMS W MCC,Respiratory neoplasms w mcc,drg
+189 - PULMONARY EDEMA & RESPIRATORY FAILURE,Pulmonary edema & respiratory failure,drg
+190 - CHRONIC OBSTRUCTIVE PULMONARY DISEASE W MCC,Chronic obstructive pulmonary disease w mcc,drg
+191 - CHRONIC OBSTRUCTIVE PULMONARY DISEASE W CC,Chronic obstructive pulmonary disease w cc,drg
+192 - CHRONIC OBSTRUCTIVE PULMONARY DISEASE W/O CC/MCC,Chronic obstructive pulmonary disease w/o cc/mcc,drg
+193 - SIMPLE PNEUMONIA & PLEURISY W MCC,Simple pneumonia & pleurisy w mcc,drg
+194 - SIMPLE PNEUMONIA & PLEURISY W CC,Simple pneumonia & pleurisy w cc,drg
+195 - SIMPLE PNEUMONIA & PLEURISY W/O CC/MCC,Simple pneumonia & pleurisy w/o cc/mcc,drg
+202 - BRONCHITIS & ASTHMA W CC/MCC,Bronchitis & asthma w cc/mcc,drg
+203 - BRONCHITIS & ASTHMA W/O CC/MCC,Bronchitis & asthma w/o cc/mcc,drg
+207 - RESPIRATORY SYSTEM DIAGNOSIS W VENTILATOR SUPPORT >96 HOURS,Respiratory system diagnosis w ventilator support >96 hours,drg
+208 - RESPIRATORY SYSTEM DIAGNOSIS W VENTILATOR SUPPORT <=96 HOURS,Respiratory system diagnosis w ventilator support <=96 hours,drg
+216 - CARDIAC VALVE & OTH MAJ CARDIOTHORACIC PROC W CARD CATH W MCC,Cardiac valve & oth maj cardiothoracic proc w card cath w mcc,drg
+229 - OTHER CARDIOTHORACIC PROCEDURES W/O MCC,Other cardiothoracic procedures w/o mcc,drg
+233 - CORONARY BYPASS W CARDIAC CATH W MCC,Coronary bypass w cardiac cath w mcc,drg
+234 - CORONARY BYPASS W CARDIAC CATH W/O MCC,Coronary bypass w cardiac cath w/o mcc,drg
+236 - CORONARY BYPASS W/O CARDIAC CATH W/O MCC,Coronary bypass w/o cardiac cath w/o mcc,drg
+242 - PERMANENT CARDIAC PACEMAKER IMPLANT W MCC,Permanent cardiac pacemaker implant w mcc,drg
+243 - PERMANENT CARDIAC PACEMAKER IMPLANT W CC,Permanent cardiac pacemaker implant w cc,drg
+244 - PERMANENT CARDIAC PACEMAKER IMPLANT W/O CC/MCC,Permanent cardiac pacemaker implant w/o cc/mcc,drg
+246 - PERC CARDIOVASC PROC W DRUG-ELUTING STENT W MCC OR 4+ VESSELS/STENTS,Perc cardiovasc proc w drug-eluting stent w mcc or 4+ vessels/stents,drg
+247 - PERC CARDIOVASC PROC W DRUG-ELUTING STENT W/O MCC,Perc cardiovasc proc w drug-eluting stent w/o mcc,drg
+252 - OTHER VASCULAR PROCEDURES W MCC,Other vascular procedures w mcc,drg
+264 - OTHER CIRCULATORY SYSTEM O.R. PROCEDURES,Other circulatory system o.r. procedures,drg
+269 - AORTIC AND HEART ASSIST PROCEDURES EXCEPT PULSATION BALLOON W/O MCC,Aortic and heart assist procedures except pulsation balloon w/o mcc,drg
+270 - OTHER MAJOR CARDIOVASCULAR PROCEDURES W MCC,Other major cardiovascular procedures w mcc,drg
+271 - OTHER MAJOR CARDIOVASCULAR PROCEDURES W CC,Other major cardiovascular procedures w cc,drg
+291 - HEART FAILURE & SHOCK W MCC,Heart failure & shock w mcc,drg
+292 - HEART FAILURE & SHOCK W CC,Heart failure & shock w cc,drg
+293 - HEART FAILURE & SHOCK W/O CC/MCC,Heart failure & shock w/o cc/mcc,drg
+299 - PERIPHERAL VASCULAR DISORDERS W MCC,Peripheral vascular disorders w mcc,drg
+300 - PERIPHERAL VASCULAR DISORDERS W CC,Peripheral vascular disorders w cc,drg
+303 - ATHEROSCLEROSIS W/O MCC,Atherosclerosis w/o mcc,drg
+304 - HYPERTENSION W MCC,Hypertension w mcc,drg
+305 - HYPERTENSION W/O MCC,Hypertension w/o mcc,drg
+308 - CARDIAC ARRHYTHMIA & CONDUCTION DISORDERS W MCC,Cardiac arrhythmia & conduction disorders w mcc,drg
+309 - CARDIAC ARRHYTHMIA & CONDUCTION DISORDERS W CC,Cardiac arrhythmia & conduction disorders w cc,drg
+310 - CARDIAC ARRHYTHMIA & CONDUCTION DISORDERS W/O CC/MCC,Cardiac arrhythmia & conduction disorders w/o cc/mcc,drg
+312 - SYNCOPE & COLLAPSE,Syncope & collapse,drg
+313 - CHEST PAIN,Chest pain,drg
+314 - OTHER CIRCULATORY SYSTEM DIAGNOSES W MCC,Other circulatory system diagnoses w mcc,drg
+315 - OTHER CIRCULATORY SYSTEM DIAGNOSES W CC,Other circulatory system diagnoses w cc,drg
+329 - MAJOR SMALL & LARGE BOWEL PROCEDURES W MCC,Major small & large bowel procedures w mcc,drg
+330 - MAJOR SMALL & LARGE BOWEL PROCEDURES W CC,Major small & large bowel procedures w cc,drg
+331 - MAJOR SMALL & LARGE BOWEL PROCEDURES W/O CC/MCC,Major small & large bowel procedures w/o cc/mcc,drg
+356 - OTHER DIGESTIVE SYSTEM O.R. PROCEDURES W MCC,Other digestive system o.r. procedures w mcc,drg
+371 - MAJOR GASTROINTESTINAL DISORDERS & PERITONEAL INFECTIONS W MCC,Major gastrointestinal disorders & peritoneal infections w mcc,drg
+372 - MAJOR GASTROINTESTINAL DISORDERS & PERITONEAL INFECTIONS W CC,Major gastrointestinal disorders & peritoneal infections w cc,drg
+377 - G.I. HEMORRHAGE W MCC,G.i. hemorrhage w mcc,drg
+378 - G.I. HEMORRHAGE W CC,G.i. hemorrhage w cc,drg
+388 - G.I. OBSTRUCTION W MCC,G.i. obstruction w mcc,drg
+389 - G.I. OBSTRUCTION W CC,G.i. obstruction w cc,drg
+390 - G.I. OBSTRUCTION W/O CC/MCC,G.i. obstruction w/o cc/mcc,drg
+393 - OTHER DIGESTIVE SYSTEM DIAGNOSES W MCC,Other digestive system diagnoses w mcc,drg
+394 - OTHER DIGESTIVE SYSTEM DIAGNOSES W CC,Other digestive system diagnoses w cc,drg
+417 - LAPAROSCOPIC CHOLECYSTECTOMY W/O C.D.E. W MCC,Laparoscopic cholecystectomy w/o c.d.e. w mcc,drg
+418 - LAPAROSCOPIC CHOLECYSTECTOMY W/O C.D.E. W CC,Laparoscopic cholecystectomy w/o c.d.e. w cc,drg
+419 - LAPAROSCOPIC CHOLECYSTECTOMY W/O C.D.E. W/O CC/MCC,Laparoscopic cholecystectomy w/o c.d.e. w/o cc/mcc,drg
+432 - CIRRHOSIS & ALCOHOLIC HEPATITIS W MCC,Cirrhosis & alcoholic hepatitis w mcc,drg
+435 - MALIGNANCY OF HEPATOBILIARY SYSTEM OR PANCREAS W MCC,Malignancy of hepatobiliary system or pancreas w mcc,drg
+439 - DISORDERS OF PANCREAS EXCEPT MALIGNANCY W CC,Disorders of pancreas except malignancy w cc,drg
+440 - DISORDERS OF PANCREAS EXCEPT MALIGNANCY W/O CC/MCC,Disorders of pancreas except malignancy w/o cc/mcc,drg
+460 - SPINAL FUSION EXCEPT CERVICAL W/O MCC,Spinal fusion except cervical w/o mcc,drg
+467 - REVISION OF HIP OR KNEE REPLACEMENT W CC,Revision of hip or knee replacement w cc,drg
+469 - MAJOR HIP AND KNEE JOINT REPLACEMENT OR REATTACHMENT OF LOWER EXTREM,Major hip and knee joint replacement or reattachment of lower extrem,drg
+470 - MAJOR JOINT REPLACEMENT OR REATTACHMENT OF LOWER EXTREMITY W/O MCC,Major joint replacement or reattachment of lower extremity w/o mcc,drg
+472 - CERVICAL SPINAL FUSION W CC,Cervical spinal fusion w cc,drg
+473 - CERVICAL SPINAL FUSION W/O CC/MCC,Cervical spinal fusion w/o cc/mcc,drg
+480 - HIP & FEMUR PROCEDURES EXCEPT MAJOR JOINT W MCC,Hip & femur procedures except major joint w mcc,drg
+481 - HIP & FEMUR PROCEDURES EXCEPT MAJOR JOINT W CC,Hip & femur procedures except major joint w cc,drg
+483 - MAJOR JOINT/LIMB REATTACHMENT PROCEDURE OF UPPER EXTREMITIES,Major joint/limb reattachment procedure of upper extremities,drg
+516 - OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W CC,Other musculoskelet sys & conn tiss o.r. proc w cc,drg
+536 - FRACTURES OF HIP & PELVIS W/O MCC,Fractures of hip & pelvis w/o mcc,drg
+543 - PATHOLOGICAL FRACTURES & MUSCULOSKELET & CONN TISS MALIG W CC,Pathological fractures & musculoskelet & conn tiss malig w cc,drg
+551 - MEDICAL BACK PROBLEMS W MCC,Medical back problems w mcc,drg
+552 - MEDICAL BACK PROBLEMS W/O MCC,Medical back problems w/o mcc,drg
+603 - CELLULITIS W/O MCC,Cellulitis w/o mcc,drg
+637 - DIABETES W MCC,Diabetes w mcc,drg
+638 - DIABETES W CC,Diabetes w cc,drg
+639 - DIABETES W/O CC/MCC,Diabetes w/o cc/mcc,drg
+658 - KIDNEY & URETER PROCEDURES FOR NEOPLASM W/O CC/MCC,Kidney & ureter procedures for neoplasm w/o cc/mcc,drg
+673 - OTHER KIDNEY & URINARY TRACT PROCEDURES W MCC,Other kidney & urinary tract procedures w mcc,drg
+682 - RENAL FAILURE W MCC,Renal failure w mcc,drg
+683 - RENAL FAILURE W CC,Renal failure w cc,drg
+689 - KIDNEY & URINARY TRACT INFECTIONS W MCC,Kidney & urinary tract infections w mcc,drg
+690 - KIDNEY & URINARY TRACT INFECTIONS W/O MCC,Kidney & urinary tract infections w/o mcc,drg
+698 - OTHER KIDNEY & URINARY TRACT DIAGNOSES W MCC,Other kidney & urinary tract diagnoses w mcc,drg
+699 - OTHER KIDNEY & URINARY TRACT DIAGNOSES W CC,Other kidney & urinary tract diagnoses w cc,drg
+708 - MAJOR MALE PELVIC PROCEDURES W/O CC/MCC,Major male pelvic procedures w/o cc/mcc,drg
+781 - OTHER ANTEPARTUM DIAGNOSES W MEDICAL COMPLICATIONS,Other antepartum diagnoses w medical complications,drg
+811 - RED BLOOD CELL DISORDERS W MCC,Red blood cell disorders w mcc,drg
+812 - RED BLOOD CELL DISORDERS W/O MCC,Red blood cell disorders w/o mcc,drg
+813 - COAGULATION DISORDERS,Coagulation disorders,drg
+840 - LYMPHOMA & NON-ACUTE LEUKEMIA W MCC,Lymphoma & non-acute leukemia w mcc,drg
+853 - INFECTIOUS & PARASITIC DISEASES W O.R. PROCEDURE W MCC,Infectious & parasitic diseases w o.r. procedure w mcc,drg
+854 - INFECTIOUS & PARASITIC DISEASES W O.R. PROCEDURE W CC,Infectious & parasitic diseases w o.r. procedure w cc,drg
+862 - POSTOPERATIVE & POST-TRAUMATIC INFECTIONS W MCC,Postoperative & post-traumatic infections w mcc,drg
+870 - SEPTICEMIA OR SEVERE SEPSIS W MV >96 HOURS,Septicemia or severe sepsis w mv >96 hours,drg
+871 - SEPTICEMIA OR SEVERE SEPSIS W/O MV >96 HOURS W MCC,Septicemia or severe sepsis w/o mv >96 hours w mcc,drg
+872 - SEPTICEMIA OR SEVERE SEPSIS W/O MV >96 HOURS W/O MCC,Septicemia or severe sepsis w/o mv >96 hours w/o mcc,drg
+881 - DEPRESSIVE NEUROSES,Depressive neuroses,drg
+884 - ORGANIC DISTURBANCES & INTELLECTUAL DISABILITY,Organic disturbances & intellectual disability,drg
+885 - PSYCHOSES,Psychoses,drg
+896 - ALCOHOL/DRUG ABUSE OR DEPENDENCE W/O REHABILITATION THERAPY W MCC,Alcohol/drug abuse or dependence w/o rehabilitation therapy w mcc,drg
+897 - ALCOHOL/DRUG ABUSE OR DEPENDENCE W/O REHABILITATION THERAPY W/O MCC,Alcohol/drug abuse or dependence w/o rehabilitation therapy w/o mcc,drg
+917 - POISONING & TOXIC EFFECTS OF DRUGS W MCC,Poisoning & toxic effects of drugs w mcc,drg
+918 - POISONING & TOXIC EFFECTS OF DRUGS W/O MCC,Poisoning & toxic effects of drugs w/o mcc,drg
+919 - COMPLICATIONS OF TREATMENT W MCC,Complications of treatment w mcc,drg
+920 - COMPLICATIONS OF TREATMENT W CC,Complications of treatment w cc,drg
+981 - EXTENSIVE O.R. PROCEDURE UNRELATED TO PRINCIPAL DIAGNOSIS W MCC,Extensive o.r. procedure unrelated to principal diagnosis w mcc,drg
+982 - EXTENSIVE O.R. PROCEDURE UNRELATED TO PRINCIPAL DIAGNOSIS W CC,Extensive o.r. procedure unrelated to principal diagnosis w cc,drg
+178 - RESPIRATORY INFECTIONS & INFLAMMATIONS W CC,Respiratory infections & inflammations w cc,drg
+253 - OTHER VASCULAR PROCEDURES W CC,Other vascular procedures w cc,drg
+254 - OTHER VASCULAR PROCEDURES W/O CC/MCC,Other vascular procedures w/o cc/mcc,drg
+379 - G.I. HEMORRHAGE W/O CC/MCC,G.i. hemorrhage w/o cc/mcc,drg
+482 - HIP & FEMUR PROCEDURES EXCEPT MAJOR JOINT W/O CC/MCC,Hip & femur procedures except major joint w/o cc/mcc,drg
+621 - O.R. PROCEDURES FOR OBESITY W/O CC/MCC,O.r. procedures for obesity w/o cc/mcc,drg
+684 - RENAL FAILURE W/O CC/MCC,Renal failure w/o cc/mcc,drg
+948 - SIGNS & SYMPTOMS W/O MCC,Signs & symptoms w/o mcc,drg
+175 - PULMONARY EMBOLISM W MCC,Pulmonary embolism w mcc,drg
+199 - PNEUMOTHORAX W MCC,Pneumothorax w mcc,drg
+206 - OTHER RESPIRATORY SYSTEM DIAGNOSES W/O MCC,Other respiratory system diagnoses w/o mcc,drg
+251 - PERC CARDIOVASC PROC W/O CORONARY ARTERY STENT W/O MCC,Perc cardiovasc proc w/o coronary artery stent w/o mcc,drg
+268 - AORTIC AND HEART ASSIST PROCEDURES EXCEPT PULSATION BALLOON W MCC,Aortic and heart assist procedures except pulsation balloon w mcc,drg
+301 - PERIPHERAL VASCULAR DISORDERS W/O CC/MCC,Peripheral vascular disorders w/o cc/mcc,drg
+445 - DISORDERS OF THE BILIARY TRACT W CC,Disorders of the biliary tract w cc,drg
+669 - TRANSURETHRAL PROCEDURES W CC,Transurethral procedures w cc,drg
+220 - CARDIAC VALVE & OTH MAJ CARDIOTHORACIC PROC W/O CARD CATH W CC,Cardiac valve & oth maj cardiothoracic proc w/o card cath w cc,drg
+266 - ENDOVASCULAR CARDIAC VALVE REPLACEMENT W MCC,Endovascular cardiac valve replacement w mcc,drg
+602 - CELLULITIS W MCC,Cellulitis w mcc,drg
+249 - PERC CARDIOVASC PROC W NON-DRUG-ELUTING STENT W/O MCC,Perc cardiovasc proc w non-drug-eluting stent w/o mcc,drg
+694 - URINARY STONES W/O ESW LITHOTRIPSY W/O MCC,Urinary stones w/o esw lithotripsy w/o mcc,drg
+153 - OTITIS MEDIA & URI W/O MCC,Otitis media & uri w/o mcc,drg
+895 - ALCOHOL/DRUG ABUSE OR DEPENDENCE W REHABILITATION THERAPY,Alcohol/drug abuse or dependence w rehabilitation therapy,drg
+186 - PLEURAL EFFUSION W MCC,Pleural effusion w mcc,drg
+187 - PLEURAL EFFUSION W CC,Pleural effusion w cc,drg
+204 - RESPIRATORY SIGNS & SYMPTOMS,Respiratory signs & symptoms,drg
+239 - AMPUTATION FOR CIRC SYS DISORDERS EXC UPPER LIMB & TOE W MCC,Amputation for circ sys disorders exc upper limb & toe w mcc,drg
+240 - AMPUTATION FOR CIRC SYS DISORDERS EXC UPPER LIMB & TOE W CC,Amputation for circ sys disorders exc upper limb & toe w cc,drg
+438 - DISORDERS OF PANCREAS EXCEPT MALIGNANCY W MCC,Disorders of pancreas except malignancy w mcc,drg
+455 - COMBINED ANTERIOR/POSTERIOR SPINAL FUSION W/O CC/MCC,Combined anterior/posterior spinal fusion w/o cc/mcc,drg
+517 - OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W/O CC/MCC,Other musculoskelet sys & conn tiss o.r. proc w/o cc/mcc,drg
+462 - BILATERAL OR MULTIPLE MAJOR JOINT PROCS OF LOWER EXTREMITY W/O MCC,Bilateral or multiple major joint procs of lower extremity w/o mcc,drg
+001 - HEART TRANSPLANT OR IMPLANT OF HEART ASSIST SYSTEM W MCC,Heart transplant or implant of heart assist system w mcc,drg
+005 - LIVER TRANSPLANT W MCC OR INTESTINAL TRANSPLANT,Liver transplant w mcc or intestinal transplant,drg
+006 - LIVER TRANSPLANT W/O MCC,Liver transplant w/o mcc,drg
+016 - AUTOLOGOUS BONE MARROW TRANSPLANT W CC/MCC,Autologous bone marrow transplant w cc/mcc,drg
+020 - INTRACRANIAL VASCULAR PROCEDURES W PDX HEMORRHAGE W MCC,Intracranial vascular procedures w pdx hemorrhage w mcc,drg
+024 - CRANIO W MAJOR DEV IMPL/ACUTE COMPLEX CNS PDX W/O MCC,Cranio w major dev impl/acute complex cns pdx w/o mcc,drg
+026 - CRANIOTOMY & ENDOVASCULAR INTRACRANIAL PROCEDURES W CC,Craniotomy & endovascular intracranial procedures w cc,drg
+029 - SPINAL PROCEDURES W CC OR SPINAL NEUROSTIMULATORS,Spinal procedures w cc or spinal neurostimulators,drg
+040 - PERIPH/CRANIAL NERVE & OTHER NERV SYST PROC W MCC,Periph/cranial nerve & other nerv syst proc w mcc,drg
+055 - NERVOUS SYSTEM NEOPLASMS W/O MCC,Nervous system neoplasms w/o mcc,drg
+093 - OTHER DISORDERS OF NERVOUS SYSTEM W/O CC/MCC,Other disorders of nervous system w/o cc/mcc,drg
+129 - MAJOR HEAD & NECK PROCEDURES W CC/MCC OR MAJOR DEVICE,Major head & neck procedures w cc/mcc or major device,drg
+130 - MAJOR HEAD & NECK PROCEDURES W/O CC/MCC,Major head & neck procedures w/o cc/mcc,drg
+131 - CRANIAL/FACIAL PROCEDURES W CC/MCC,Cranial/facial procedures w cc/mcc,drg
+165 - MAJOR CHEST PROCEDURES W/O CC/MCC,Major chest procedures w/o cc/mcc,drg
+167 - OTHER RESP SYSTEM O.R. PROCEDURES W CC,Other resp system o.r. procedures w cc,drg
+168 - OTHER RESP SYSTEM O.R. PROCEDURES W/O CC/MCC,Other resp system o.r. procedures w/o cc/mcc,drg
+196 - INTERSTITIAL LUNG DISEASE W MCC,Interstitial lung disease w mcc,drg
+197 - INTERSTITIAL LUNG DISEASE W CC,Interstitial lung disease w cc,drg
+200 - PNEUMOTHORAX W CC,Pneumothorax w cc,drg
+205 - OTHER RESPIRATORY SYSTEM DIAGNOSES W MCC,Other respiratory system diagnoses w mcc,drg
+219 - CARDIAC VALVE & OTH MAJ CARDIOTHORACIC PROC W/O CARD CATH W MCC,Cardiac valve & oth maj cardiothoracic proc w/o card cath w mcc,drg
+228 - OTHER CARDIOTHORACIC PROCEDURES W MCC,Other cardiothoracic procedures w mcc,drg
+235 - CORONARY BYPASS W/O CARDIAC CATH W MCC,Coronary bypass w/o cardiac cath w mcc,drg
+267 - ENDOVASCULAR CARDIAC VALVE REPLACEMENT W/O MCC,Endovascular cardiac valve replacement w/o mcc,drg
+273 - PERCUTANEOUS INTRACARDIAC PROCEDURES W MCC,Percutaneous intracardiac procedures w mcc,drg
+274 - PERCUTANEOUS INTRACARDIAC PROCEDURES W/O MCC,Percutaneous intracardiac procedures w/o mcc,drg
+306 - CARDIAC CONGENITAL & VALVULAR DISORDERS W MCC,Cardiac congenital & valvular disorders w mcc,drg
+354 - HERNIA PROCEDURES EXCEPT INGUINAL & FEMORAL W CC,Hernia procedures except inguinal & femoral w cc,drg
+355 - HERNIA PROCEDURES EXCEPT INGUINAL & FEMORAL W/O CC/MCC,Hernia procedures except inguinal & femoral w/o cc/mcc,drg
+357 - OTHER DIGESTIVE SYSTEM O.R. PROCEDURES W CC,Other digestive system o.r. procedures w cc,drg
+374 - DIGESTIVE MALIGNANCY W MCC,Digestive malignancy w mcc,drg
+375 - DIGESTIVE MALIGNANCY W CC,Digestive malignancy w cc,drg
+386 - INFLAMMATORY BOWEL DISEASE W CC,Inflammatory bowel disease w cc,drg
+433 - CIRRHOSIS & ALCOHOLIC HEPATITIS W CC,Cirrhosis & alcoholic hepatitis w cc,drg
+444 - DISORDERS OF THE BILIARY TRACT W MCC,Disorders of the biliary tract w mcc,drg
+456 - SPINAL FUS EXC CERV W SPINAL CURV/MALIG/INFEC OR EXT FUS W MCC,Spinal fus exc cerv w spinal curv/malig/infec or ext fus w mcc,drg
+457 - SPINAL FUS EXC CERV W SPINAL CURV/MALIG/INFEC OR EXT FUS W CC,Spinal fus exc cerv w spinal curv/malig/infec or ext fus w cc,drg
+459 - SPINAL FUSION EXCEPT CERVICAL W MCC,Spinal fusion except cervical w mcc,drg
+466 - REVISION OF HIP OR KNEE REPLACEMENT W MCC,Revision of hip or knee replacement w mcc,drg
+475 - AMPUTATION FOR MUSCULOSKELETAL SYS & CONN TISSUE DIS W CC,Amputation for musculoskeletal sys & conn tissue dis w cc,drg
+478 - BIOPSIES OF MUSCULOSKELETAL SYSTEM & CONNECTIVE TISSUE W CC,Biopsies of musculoskeletal system & connective tissue w cc,drg
+501 - SOFT TISSUE PROCEDURES W CC,Soft tissue procedures w cc,drg
+515 - OTHER MUSCULOSKELET SYS & CONN TISS O.R. PROC W MCC,Other musculoskelet sys & conn tiss o.r. proc w mcc,drg
+518 - BACK & NECK PROC EXC SPINAL FUSION W MCC OR DISC DEVICE/NEUROSTIM,Back & neck proc exc spinal fusion w mcc or disc device/neurostim,drg
+519 - BACK & NECK PROC EXC SPINAL FUSION W CC,Back & neck proc exc spinal fusion w cc,drg
+554 - BONE DISEASES & ARTHROPATHIES W/O MCC,Bone diseases & arthropathies w/o mcc,drg
+607 - MINOR SKIN DISORDERS W/O MCC,Minor skin disorders w/o mcc,drg
+643 - ENDOCRINE DISORDERS W MCC,Endocrine disorders w mcc,drg
+644 - ENDOCRINE DISORDERS W CC,Endocrine disorders w cc,drg
+652 - KIDNEY TRANSPLANT,Kidney transplant,drg
+656 - KIDNEY & URETER PROCEDURES FOR NEOPLASM W MCC,Kidney & ureter procedures for neoplasm w mcc,drg
+657 - KIDNEY & URETER PROCEDURES FOR NEOPLASM W CC,Kidney & ureter procedures for neoplasm w cc,drg
+659 - KIDNEY & URETER PROCEDURES FOR NON-NEOPLASM W MCC,Kidney & ureter procedures for non-neoplasm w mcc,drg
+660 - KIDNEY & URETER PROCEDURES FOR NON-NEOPLASM W CC,Kidney & ureter procedures for non-neoplasm w cc,drg
+674 - OTHER KIDNEY & URINARY TRACT PROCEDURES W CC,Other kidney & urinary tract procedures w cc,drg
+737 - UTERINE & ADNEXA PROC FOR OVARIAN OR ADNEXAL MALIGNANCY W CC,Uterine & adnexa proc for ovarian or adnexal malignancy w cc,drg
+742 - UTERINE & ADNEXA PROC FOR NON-MALIGNANCY W CC/MCC,Uterine & adnexa proc for non-malignancy w cc/mcc,drg
+743 - UTERINE & ADNEXA PROC FOR NON-MALIGNANCY W/O CC/MCC,Uterine & adnexa proc for non-malignancy w/o cc/mcc,drg
+748 - FEMALE REPRODUCTIVE SYSTEM RECONSTRUCTIVE PROCEDURES,Female reproductive system reconstructive procedures,drg
+765 - CESAREAN SECTION W CC/MCC,Cesarean section w cc/mcc,drg
+775 - VAGINAL DELIVERY W/O COMPLICATING DIAGNOSES,Vaginal delivery w/o complicating diagnoses,drg
+808 - MAJOR HEMATOL/IMMUN DIAG EXC SICKLE CELL CRISIS & COAGUL W MCC,Major hematol/immun diag exc sickle cell crisis & coagul w mcc,drg
+809 - MAJOR HEMATOL/IMMUN DIAG EXC SICKLE CELL CRISIS & COAGUL W CC,Major hematol/immun diag exc sickle cell crisis & coagul w cc,drg
+822 - LYMPHOMA & LEUKEMIA W MAJOR O.R. PROCEDURE W/O CC/MCC,Lymphoma & leukemia w major o.r. procedure w/o cc/mcc,drg
+827 - MYELOPROLIF DISORD OR POORLY DIFF NEOPL W MAJ O.R. PROC W CC,Myeloprolif disord or poorly diff neopl w maj o.r. proc w cc,drg
+834 - ACUTE LEUKEMIA W/O MAJOR O.R. PROCEDURE W MCC,Acute leukemia w/o major o.r. procedure w mcc,drg
+837 - CHEMO W ACUTE LEUKEMIA AS SDX OR W HIGH DOSE CHEMO AGENT W MCC,Chemo w acute leukemia as sdx or w high dose chemo agent w mcc,drg
+838 - CHEMO W ACUTE LEUKEMIA AS SDX W CC OR HIGH DOSE CHEMO AGENT,Chemo w acute leukemia as sdx w cc or high dose chemo agent,drg
+841 - LYMPHOMA & NON-ACUTE LEUKEMIA W CC,Lymphoma & non-acute leukemia w cc,drg
+846 - CHEMOTHERAPY W/O ACUTE LEUKEMIA AS SECONDARY DIAGNOSIS W MCC,Chemotherapy w/o acute leukemia as secondary diagnosis w mcc,drg
+847 - CHEMOTHERAPY W/O ACUTE LEUKEMIA AS SECONDARY DIAGNOSIS W CC,Chemotherapy w/o acute leukemia as secondary diagnosis w cc,drg
+856 - POSTOPERATIVE OR POST-TRAUMATIC INFECTIONS W O.R. PROC W MCC,Postoperative or post-traumatic infections w o.r. proc w mcc,drg
+857 - POSTOPERATIVE OR POST-TRAUMATIC INFECTIONS W O.R. PROC W CC,Postoperative or post-traumatic infections w o.r. proc w cc,drg
+863 - POSTOPERATIVE & POST-TRAUMATIC INFECTIONS W/O MCC,Postoperative & post-traumatic infections w/o mcc,drg
+866 - VIRAL ILLNESS W/O MCC,Viral illness w/o mcc,drg
+880 - ACUTE ADJUSTMENT REACTION & PSYCHOSOCIAL DYSFUNCTION,Acute adjustment reaction & psychosocial dysfunction,drg
+907 - OTHER O.R. PROCEDURES FOR INJURIES W MCC,Other o.r. procedures for injuries w mcc,drg
+908 - OTHER O.R. PROCEDURES FOR INJURIES W CC,Other o.r. procedures for injuries w cc,drg
+928 - FULL THICKNESS BURN W SKIN GRAFT OR INHAL INJ W CC/MCC,Full thickness burn w skin graft or inhal inj w cc/mcc,drg
+935 - NON-EXTENSIVE BURNS,Non-extensive burns,drg
+947 - SIGNS & SYMPTOMS W MCC,Signs & symptoms w mcc,drg
+957 - OTHER O.R. PROCEDURES FOR MULTIPLE SIGNIFICANT TRAUMA W MCC,Other o.r. procedures for multiple significant trauma w mcc,drg
+958 - OTHER O.R. PROCEDURES FOR MULTIPLE SIGNIFICANT TRAUMA W CC,Other o.r. procedures for multiple significant trauma w cc,drg
+963 - OTHER MULTIPLE SIGNIFICANT TRAUMA W MCC,Other multiple significant trauma w mcc,drg
+964 - OTHER MULTIPLE SIGNIFICANT TRAUMA W CC,Other multiple significant trauma w cc,drg
+974 - HIV W MAJOR RELATED CONDITION W MCC,Hiv w major related condition w mcc,drg
+975 - HIV W MAJOR RELATED CONDITION W CC,Hiv w major related condition w cc,drg
+983 - EXTENSIVE O.R. PROCEDURE UNRELATED TO PRINCIPAL DIAGNOSIS W/O CC/MCC,Extensive o.r. procedure unrelated to principal diagnosis w/o cc/mcc,drg
+987 - NON-EXTENSIVE O.R. PROC UNRELATED TO PRINCIPAL DIAGNOSIS W MCC,Non-extensive o.r. proc unrelated to principal diagnosis w mcc,drg
+033 - VENTRICULAR SHUNT PROCEDURES W/O CC/MCC,Ventricular shunt procedures w/o cc/mcc,drg
+068 - NONSPECIFIC CVA & PRECEREBRAL OCCLUSION W/O INFARCT W/O MCC,Nonspecific cva & precerebral occlusion w/o infarct w/o mcc,drg
+184 - MAJOR CHEST TRAUMA W CC,Major chest trauma w cc,drg
+221 - CARDIAC VALVE & OTH MAJ CARDIOTHORACIC PROC W/O CARD CATH W/O CC/MCC,Cardiac valve & oth maj cardiothoracic proc w/o card cath w/o cc/mcc,drg
+227 - CARDIAC DEFIBRILLATOR IMPLANT W/O CARDIAC CATH W/O MCC,Cardiac defibrillator implant w/o cardiac cath w/o mcc,drg
+250 - PERC CARDIOVASC PROC W/O CORONARY ARTERY STENT W MCC,Perc cardiovasc proc w/o coronary artery stent w mcc,drg
+302 - ATHEROSCLEROSIS W MCC,Atherosclerosis w mcc,drg
+337 - PERITONEAL ADHESIOLYSIS W/O CC/MCC,Peritoneal adhesiolysis w/o cc/mcc,drg
+373 - MAJOR GASTROINTESTINAL DISORDERS & PERITONEAL INFECTIONS W/O CC/MCC,Major gastrointestinal disorders & peritoneal infections w/o cc/mcc,drg
+395 - OTHER DIGESTIVE SYSTEM DIAGNOSES W/O CC/MCC,Other digestive system diagnoses w/o cc/mcc,drg
+436 - MALIGNANCY OF HEPATOBILIARY SYSTEM OR PANCREAS W CC,Malignancy of hepatobiliary system or pancreas w cc,drg
+454 - COMBINED ANTERIOR/POSTERIOR SPINAL FUSION W CC,Combined anterior/posterior spinal fusion w cc,drg
+468 - REVISION OF HIP OR KNEE REPLACEMENT W/O CC/MCC,Revision of hip or knee replacement w/o cc/mcc,drg
+471 - CERVICAL SPINAL FUSION W MCC,Cervical spinal fusion w mcc,drg
+520 - BACK & NECK PROC EXC SPINAL FUSION W/O CC/MCC,Back & neck proc exc spinal fusion w/o cc/mcc,drg
+546 - CONNECTIVE TISSUE DISORDERS W CC,Connective tissue disorders w cc,drg
+556 - SIGNS & SYMPTOMS OF MUSCULOSKELETAL SYSTEM & CONN TISSUE W/O MCC,Signs & symptoms of musculoskeletal system & conn tissue w/o mcc,drg
+645 - ENDOCRINE DISORDERS W/O CC/MCC,Endocrine disorders w/o cc/mcc,drg
+864 - FEVER,Fever,drg
+988 - NON-EXTENSIVE O.R. PROC UNRELATED TO PRINCIPAL DIAGNOSIS W CC,Non-extensive o.r. proc unrelated to principal diagnosis w cc,drg
+883 - DISORDERS OF PERSONALITY & IMPULSE CONTROL,Disorders of personality & impulse control,drg
+311 - ANGINA PECTORIS,Angina pectoris,drg
+181 - RESPIRATORY NEOPLASMS W CC,Respiratory neoplasms w cc,drg
+041 - PERIPH/CRANIAL NERVE & OTHER NERV SYST PROC W CC OR PERIPH NEUROSTIM,Periph/cranial nerve & other nerv syst proc w cc or periph neurostim,drg
+248 - PERC CARDIOVASC PROC W NON-DRUG-ELUTING STENT W MCC OR 4+ VES/STENTS,Perc cardiovasc proc w non-drug-eluting stent w mcc or 4+ ves/stents,drg
+707 - MAJOR MALE PELVIC PROCEDURES W CC/MCC,Major male pelvic procedures w cc/mcc,drg
+336 - PERITONEAL ADHESIOLYSIS W CC,Peritoneal adhesiolysis w cc,drg
+713 - TRANSURETHRAL PROSTATECTOMY W CC/MCC,Transurethral prostatectomy w cc/mcc,drg
+179 - RESPIRATORY INFECTIONS & INFLAMMATIONS W/O CC/MCC,Respiratory infections & inflammations w/o cc/mcc,drg
+261 - CARDIAC PACEMAKER REVISION EXCEPT DEVICE REPLACEMENT W CC,Cardiac pacemaker revision except device replacement w cc,drg
+316 - OTHER CIRCULATORY SYSTEM DIAGNOSES W/O CC/MCC,Other circulatory system diagnoses w/o cc/mcc,drg
+035 - CAROTID ARTERY STENT PROCEDURE W CC,Carotid artery stent procedure w cc,drg
+036 - CAROTID ARTERY STENT PROCEDURE W/O CC/MCC,Carotid artery stent procedure w/o cc/mcc,drg
+215 - OTHER HEART ASSIST SYSTEM IMPLANT,Other heart assist system implant,drg
+272 - OTHER MAJOR CARDIOVASCULAR PROCEDURES W/O CC/MCC,Other major cardiovascular procedures w/o cc/mcc,drg
+592 - SKIN ULCERS W MCC,Skin ulcers w mcc,drg
+620 - O.R. PROCEDURES FOR OBESITY W CC,O.r. procedures for obesity w cc,drg
+696 - KIDNEY & URINARY TRACT SIGNS & SYMPTOMS W/O MCC,Kidney & urinary tract signs & symptoms w/o mcc,drg
+916 - ALLERGIC REACTIONS W/O MCC,Allergic reactions w/o mcc,drg
+061 - ACUTE ISCHEMIC STROKE W USE OF THROMBOLYTIC AGENT W MCC,Acute ischemic stroke w use of thrombolytic agent w mcc,drg
+542 - PATHOLOGICAL FRACTURES & MUSCULOSKELET & CONN TISS MALIG W MCC,Pathological fractures & musculoskelet & conn tiss malig w mcc,drg
+544 - PATHOLOGICAL FRACTURES & MUSCULOSKELET & CONN TISS MALIG W/O CC/MCC,Pathological fractures & musculoskelet & conn tiss malig w/o cc/mcc,drg
+335 - PERITONEAL ADHESIOLYSIS W MCC,Peritoneal adhesiolysis w mcc,drg
+345 - MINOR SMALL & LARGE BOWEL PROCEDURES W CC,Minor small & large bowel procedures w cc,drg
+728 - INFLAMMATION OF THE MALE REPRODUCTIVE SYSTEM W/O MCC,Inflammation of the male reproductive system w/o mcc,drg
+007 - LUNG TRANSPLANT,Lung transplant,drg
+028 - SPINAL PROCEDURES W MCC,Spinal procedures w mcc,drg
+031 - VENTRICULAR SHUNT PROCEDURES W MCC,Ventricular shunt procedures w mcc,drg
+032 - VENTRICULAR SHUNT PROCEDURES W CC,Ventricular shunt procedures w cc,drg
+614 - ADRENAL & PITUITARY PROCEDURES W CC/MCC,Adrenal & pituitary procedures w cc/mcc,drg
+535 - FRACTURES OF HIP & PELVIS W MCC,Fractures of hip & pelvis w mcc,drg
+017 - AUTOLOGOUS BONE MARROW TRANSPLANT W/O CC/MCC,Autologous bone marrow transplant w/o cc/mcc,drg
+446 - DISORDERS OF THE BILIARY TRACT W/O CC/MCC,Disorders of the biliary tract w/o cc/mcc,drg
+571 - SKIN DEBRIDEMENT W CC,Skin debridement w cc,drg
+573 - SKIN GRAFT FOR SKIN ULCER OR CELLULITIS W MCC,Skin graft for skin ulcer or cellulitis w mcc,drg
+902 - WOUND DEBRIDEMENTS FOR INJURIES W CC,Wound debridements for injuries w cc,drg
+904 - SKIN GRAFTS FOR INJURIES W CC/MCC,Skin grafts for injuries w cc/mcc,drg
+014 - ALLOGENEIC BONE MARROW TRANSPLANT,Allogeneic bone marrow transplant,drg
+545 - CONNECTIVE TISSUE DISORDERS W MCC,Connective tissue disorders w mcc,drg
+654 - MAJOR BLADDER PROCEDURES W CC,Major bladder procedures w cc,drg
+821 - LYMPHOMA & LEUKEMIA W MAJOR O.R. PROCEDURE W CC,Lymphoma & leukemia w major o.r. procedure w cc,drg
+226 - CARDIAC DEFIBRILLATOR IMPLANT W/O CARDIAC CATH W MCC,Cardiac defibrillator implant w/o cardiac cath w mcc,drg
+489 - KNEE PROCEDURES W/O PDX OF INFECTION W/O CC/MCC,Knee procedures w/o pdx of infection w/o cc/mcc,drg
+217 - CARDIAC VALVE & OTH MAJ CARDIOTHORACIC PROC W CARD CATH W CC,Cardiac valve & oth maj cardiothoracic proc w card cath w cc,drg
+225 - CARDIAC DEFIB IMPLANT W CARDIAC CATH W/O AMI/HF/SHOCK W/O MCC,Cardiac defib implant w cardiac cath w/o ami/hf/shock w/o mcc,drg
+458 - SPINAL FUS EXC CERV W SPINAL CURV/MALIG/INFEC OR EXT FUS W/O CC/MCC,Spinal fus exc cerv w spinal curv/malig/infec or ext fus w/o cc/mcc,drg
+384 - UNCOMPLICATED PEPTIC ULCER W/O MCC,Uncomplicated peptic ulcer w/o mcc,drg
+498 - LOCAL EXCISION & REMOVAL INT FIX DEVICES OF HIP & FEMUR W CC/MCC,Local excision & removal int fix devices of hip & femur w cc/mcc,drg
+642 - INBORN AND OTHER DISORDERS OF METABOLISM,Inborn and other disorders of metabolism,drg
+823 - LYMPHOMA & NON-ACUTE LEUKEMIA W OTHER PROC W MCC,Lymphoma & non-acute leukemia w other proc w mcc,drg
+824 - LYMPHOMA & NON-ACUTE LEUKEMIA W OTHER O.R. PROC W CC,Lymphoma & non-acute leukemia w other o.r. proc w cc,drg
+909 - OTHER O.R. PROCEDURES FOR INJURIES W/O CC/MCC,Other o.r. procedures for injuries w/o cc/mcc,drg
+714 - TRANSURETHRAL PROSTATECTOMY W/O CC/MCC,Transurethral prostatectomy w/o cc/mcc,drg
+882 - NEUROSES EXCEPT DEPRESSIVE,Neuroses except depressive,drg
+949 - AFTERCARE W CC/MCC,Aftercare w cc/mcc,drg
+453 - COMBINED ANTERIOR/POSTERIOR SPINAL FUSION W MCC,Combined anterior/posterior spinal fusion w mcc,drg
+380 - COMPLICATED PEPTIC ULCER W MCC,Complicated peptic ulcer w mcc,drg
+381 - COMPLICATED PEPTIC ULCER W CC,Complicated peptic ulcer w cc,drg
+940 - O.R. PROC W DIAGNOSES OF OTHER CONTACT W HEALTH SERVICES W CC,O.r. proc w diagnoses of other contact w health services w cc,drg
+369 - MAJOR ESOPHAGEAL DISORDERS W CC,Major esophageal disorders w cc,drg
+152 - OTITIS MEDIA & URI W MCC,Otitis media & uri w mcc,drg
+570 - SKIN DEBRIDEMENT W MCC,Skin debridement w mcc,drg
+072 - NONSPECIFIC CEREBROVASCULAR DISORDERS W/O CC/MCC,Nonspecific cerebrovascular disorders w/o cc/mcc,drg
+183 - MAJOR CHEST TRAUMA W MCC,Major chest trauma w mcc,drg
+089 - CONCUSSION W CC,Concussion w cc,drg
+479 - BIOPSIES OF MUSCULOSKELETAL SYSTEM & CONNECTIVE TISSUE W/O CC/MCC,Biopsies of musculoskeletal system & connective tissue w/o cc/mcc,drg
+565 - OTHER MUSCULOSKELETAL SYS & CONNECTIVE TISSUE DIAGNOSES W CC,Other musculoskeletal sys & connective tissue diagnoses w cc,drg
+502 - SOFT TISSUE PROCEDURES W/O CC/MCC,Soft tissue procedures w/o cc/mcc,drg
+185 - MAJOR CHEST TRAUMA W/O CC/MCC,Major chest trauma w/o cc/mcc,drg
+653 - MAJOR BLADDER PROCEDURES W MCC,Major bladder procedures w mcc,drg
+843 - OTHER MYELOPROLIF DIS OR POORLY DIFF NEOPL DIAG W MCC,Other myeloprolif dis or poorly diff neopl diag w mcc,drg
+577 - SKIN GRAFT EXC FOR SKIN ULCER OR CELLULITIS W CC,Skin graft exc for skin ulcer or cellulitis w cc,drg
+661 - KIDNEY & URETER PROCEDURES FOR NON-NEOPLASM W/O CC/MCC,Kidney & ureter procedures for non-neoplasm w/o cc/mcc,drg
+700 - OTHER KIDNEY & URINARY TRACT DIAGNOSES W/O CC/MCC,Other kidney & urinary tract diagnoses w/o cc/mcc,drg
+343 - APPENDECTOMY W/O COMPLICATED PRINCIPAL DIAG W/O CC/MCC,Appendectomy w/o complicated principal diag w/o cc/mcc,drg
+352 - INGUINAL & FEMORAL HERNIA PROCEDURES W/O CC/MCC,Inguinal & femoral hernia procedures w/o cc/mcc,drg
+307 - CARDIAC CONGENITAL & VALVULAR DISORDERS W/O MCC,Cardiac congenital & valvular disorders w/o mcc,drg
+351 - INGUINAL & FEMORAL HERNIA PROCEDURES W CC,Inguinal & femoral hernia procedures w cc,drg
+474 - AMPUTATION FOR MUSCULOSKELETAL SYS & CONN TISSUE DIS W MCC,Amputation for musculoskeletal sys & conn tissue dis w mcc,drg
+477 - BIOPSIES OF MUSCULOSKELETAL SYSTEM & CONNECTIVE TISSUE W MCC,Biopsies of musculoskeletal system & connective tissue w mcc,drg
+486 - KNEE PROCEDURES W PDX OF INFECTION W CC,Knee procedures w pdx of infection w cc,drg
+488 - KNEE PROCEDURES W/O PDX OF INFECTION W CC/MCC,Knee procedures w/o pdx of infection w cc/mcc,drg
+553 - BONE DISEASES & ARTHROPATHIES W MCC,Bone diseases & arthropathies w mcc,drg
+564 - OTHER MUSCULOSKELETAL SYS & CONNECTIVE TISSUE DIAGNOSES W MCC,Other musculoskeletal sys & connective tissue diagnoses w mcc,drg
+615 - ADRENAL & PITUITARY PROCEDURES W/O CC/MCC,Adrenal & pituitary procedures w/o cc/mcc,drg
+668 - TRANSURETHRAL PROCEDURES W MCC,Transurethral procedures w mcc,drg
+717 - OTHER MALE REPRODUCTIVE SYSTEM O.R. PROC EXC MALIGNANCY W CC/MCC,Other male reproductive system o.r. proc exc malignancy w cc/mcc,drg
+865 - VIRAL ILLNESS W MCC,Viral illness w mcc,drg
+977 - HIV W OR W/O OTHER RELATED CONDITION,Hiv w or w/o other related condition,drg
+718 - OTHER MALE REPRODUCTIVE SYSTEM O.R. PROC EXC MALIGNANCY W/O CC/MCC,Other male reproductive system o.r. proc exc malignancy w/o cc/mcc,drg
+063 - ACUTE ISCHEMIC STROKE W USE OF THROMBOLYTIC AGENT W/O CC/MCC,Acute ischemic stroke w use of thrombolytic agent w/o cc/mcc,drg
+835 - ACUTE LEUKEMIA W/O MAJOR O.R. PROCEDURE W CC,Acute leukemia w/o major o.r. procedure w cc,drg
+059 - MULTIPLE SCLEROSIS & CEREBELLAR ATAXIA W CC,Multiple sclerosis & cerebellar ataxia w cc,drg
+868 - OTHER INFECTIOUS & PARASITIC DISEASES DIAGNOSES W CC,Other infectious & parasitic diseases diagnoses w cc,drg
+887 - OTHER MENTAL DISORDER DIAGNOSES,Other mental disorder diagnoses,drg
+125 - OTHER DISORDERS OF THE EYE W/O MCC,Other disorders of the eye w/o mcc,drg
+260 - CARDIAC PACEMAKER REVISION EXCEPT DEVICE REPLACEMENT W MCC,Cardiac pacemaker revision except device replacement w mcc,drg
+339 - APPENDECTOMY W COMPLICATED PRINCIPAL DIAG W CC,Appendectomy w complicated principal diag w cc,drg
+353 - HERNIA PROCEDURES EXCEPT INGUINAL & FEMORAL W MCC,Hernia procedures except inguinal & femoral w mcc,drg
+368 - MAJOR ESOPHAGEAL DISORDERS W MCC,Major esophageal disorders w mcc,drg
+500 - SOFT TISSUE PROCEDURES W MCC,Soft tissue procedures w mcc,drg
+596 - MAJOR SKIN DISORDERS W/O MCC,Major skin disorders w/o mcc,drg
+867 - OTHER INFECTIOUS & PARASITIC DISEASES DIAGNOSES W MCC,Other infectious & parasitic diseases diagnoses w mcc,drg
+869 - OTHER INFECTIOUS & PARASITIC DISEASES DIAGNOSES W/O CC/MCC,Other infectious & parasitic diseases diagnoses w/o cc/mcc,drg
+060 - MULTIPLE SCLEROSIS & CEREBELLAR ATAXIA W/O CC/MCC,Multiple sclerosis & cerebellar ataxia w/o cc/mcc,drg
+151 - EPISTAXIS W/O MCC,Epistaxis w/o mcc,drg
+158 - DENTAL & ORAL DISEASES W CC,Dental & oral diseases w cc,drg
+415 - CHOLECYSTECTOMY EXCEPT BY LAPAROSCOPE W/O C.D.E. W CC,Cholecystectomy except by laparoscope w/o c.d.e. w cc,drg
+540 - OSTEOMYELITIS W CC,Osteomyelitis w cc,drg
+008 - SIMULTANEOUS PANCREAS/KIDNEY TRANSPLANT,Simultaneous pancreas/kidney transplant,drg
+030 - SPINAL PROCEDURES W/O CC/MCC,Spinal procedures w/o cc/mcc,drg
+574 - SKIN GRAFT FOR SKIN ULCER OR CELLULITIS W CC,Skin graft for skin ulcer or cellulitis w cc,drg
+224 - CARDIAC DEFIB IMPLANT W CARDIAC CATH W/O AMI/HF/SHOCK W MCC,Cardiac defib implant w cardiac cath w/o ami/hf/shock w mcc,drg
+245 - AICD GENERATOR PROCEDURES,Aicd generator procedures,drg
+078 - HYPERTENSIVE ENCEPHALOPATHY W CC,Hypertensive encephalopathy w cc,drg
+123 - NEUROLOGICAL EYE DISORDERS,Neurological eye disorders,drg
+385 - INFLAMMATORY BOWEL DISEASE W MCC,Inflammatory bowel disease w mcc,drg
+387 - INFLAMMATORY BOWEL DISEASE W/O CC/MCC,Inflammatory bowel disease w/o cc/mcc,drg
+504 - FOOT PROCEDURES W CC,Foot procedures w cc,drg
+539 - OSTEOMYELITIS W MCC,Osteomyelitis w mcc,drg
+555 - SIGNS & SYMPTOMS OF MUSCULOSKELETAL SYSTEM & CONN TISSUE W MCC,Signs & symptoms of musculoskeletal system & conn tissue w mcc,drg
+597 - MALIGNANT BREAST DISORDERS W MCC,Malignant breast disorders w mcc,drg
+598 - MALIGNANT BREAST DISORDERS W CC,Malignant breast disorders w cc,drg
+606 - MINOR SKIN DISORDERS W MCC,Minor skin disorders w mcc,drg
+666 - PROSTATECTOMY W CC,Prostatectomy w cc,drg
+670 - TRANSURETHRAL PROCEDURES W/O CC/MCC,Transurethral procedures w/o cc/mcc,drg
+727 - INFLAMMATION OF THE MALE REPRODUCTIVE SYSTEM W MCC,Inflammation of the male reproductive system w mcc,drg
+736 - UTERINE & ADNEXA PROC FOR OVARIAN OR ADNEXAL MALIGNANCY W MCC,Uterine & adnexa proc for ovarian or adnexal malignancy w mcc,drg
+760 - MENSTRUAL & OTHER FEMALE REPRODUCTIVE SYSTEM DISORDERS W CC/MCC,Menstrual & other female reproductive system disorders w cc/mcc,drg
+815 - RETICULOENDOTHELIAL & IMMUNITY DISORDERS W CC,Reticuloendothelial & immunity disorders w cc,drg
+816 - RETICULOENDOTHELIAL & IMMUNITY DISORDERS W/O CC/MCC,Reticuloendothelial & immunity disorders w/o cc/mcc,drg
+820 - LYMPHOMA & LEUKEMIA W MAJOR O.R. PROCEDURE W MCC,Lymphoma & leukemia w major o.r. procedure w mcc,drg
+914 - TRAUMATIC INJURY W/O MCC,Traumatic injury w/o mcc,drg
+139 - SALIVARY GLAND PROCEDURES,Salivary gland procedures,drg
+655 - MAJOR BLADDER PROCEDURES W/O CC/MCC,Major bladder procedures w/o cc/mcc,drg
+876 - O.R. PROCEDURE W PRINCIPAL DIAGNOSES OF MENTAL ILLNESS,O.r. procedure w principal diagnoses of mental illness,drg
+921 - COMPLICATIONS OF TREATMENT W/O CC/MCC,Complications of treatment w/o cc/mcc,drg
+593 - SKIN ULCERS W CC,Skin ulcers w cc,drg
+042 - PERIPH/CRANIAL NERVE & OTHER NERV SYST PROC W/O CC/MCC,Periph/cranial nerve & other nerv syst proc w/o cc/mcc,drg
+839 - CHEMO W ACUTE LEUKEMIA AS SDX W/O CC/MCC,Chemo w acute leukemia as sdx w/o cc/mcc,drg
+115 - EXTRAOCULAR PROCEDURES EXCEPT ORBIT,Extraocular procedures except orbit,drg
+340 - APPENDECTOMY W COMPLICATED PRINCIPAL DIAG W/O CC/MCC,Appendectomy w complicated principal diag w/o cc/mcc,drg
+929 - FULL THICKNESS BURN W SKIN GRAFT OR INHAL INJ W/O CC/MCC,Full thickness burn w skin graft or inhal inj w/o cc/mcc,drg
+829 - MYELOPROLIFERATIVE DISORDERS OR POORLY DIFFERENTIATED NEOPLASMS W OT,Myeloproliferative disorders or poorly differentiated neoplasms w ot,drg
+849 - RADIOTHERAPY,Radiotherapy,drg
+090 - CONCUSSION W/O CC/MCC,Concussion w/o cc/mcc,drg
+058 - MULTIPLE SCLEROSIS & CEREBELLAR ATAXIA W MCC,Multiple sclerosis & cerebellar ataxia w mcc,drg
+693 - URINARY STONES W/O ESW LITHOTRIPSY W MCC,Urinary stones w/o esw lithotripsy w mcc,drg
+416 - CHOLECYSTECTOMY EXCEPT BY LAPAROSCOPE W/O C.D.E. W/O CC/MCC,Cholecystectomy except by laparoscope w/o c.d.e. w/o cc/mcc,drg
+945 - REHABILITATION W CC/MCC,Rehabilitation w cc/mcc,drg
+437 - MALIGNANCY OF HEPATOBILIARY SYSTEM OR PANCREAS W/O CC/MCC,Malignancy of hepatobiliary system or pancreas w/o cc/mcc,drg
+687 - KIDNEY & URINARY TRACT NEOPLASMS W CC,Kidney & urinary tract neoplasms w cc,drg
+950 - AFTERCARE W/O CC/MCC,Aftercare w/o cc/mcc,drg
+946 - REHABILITATION W/O CC/MCC,Rehabilitation w/o cc/mcc,drg
+726 - BENIGN PROSTATIC HYPERTROPHY W/O MCC,Benign prostatic hypertrophy w/o mcc,drg
+052 - SPINAL DISORDERS & INJURIES W CC/MCC,Spinal disorders & injuries w cc/mcc,drg
+053 - SPINAL DISORDERS & INJURIES W/O CC/MCC,Spinal disorders & injuries w/o cc/mcc,drg
+423 - OTHER HEPATOBILIARY OR PANCREAS O.R. PROCEDURES W MCC,Other hepatobiliary or pancreas o.r. procedures w mcc,drg
+578 - SKIN GRAFT EXC FOR SKIN ULCER OR CELLULITIS W/O CC/MCC,Skin graft exc for skin ulcer or cellulitis w/o cc/mcc,drg
+844 - OTHER MYELOPROLIF DIS OR POORLY DIFF NEOPL DIAG W CC,Other myeloprolif dis or poorly diff neopl diag w cc,drg
+114 - ORBITAL PROCEDURES W/O CC/MCC,Orbital procedures w/o cc/mcc,drg
+117 - INTRAOCULAR PROCEDURES W/O CC/MCC,Intraocular procedures w/o cc/mcc,drg
+408 - BILIARY TRACT PROC EXCEPT ONLY CHOLECYST W OR W/O C.D.E. W MCC,Biliary tract proc except only cholecyst w or w/o c.d.e. w mcc,drg
+774 - VAGINAL DELIVERY W COMPLICATING DIAGNOSES,Vaginal delivery w complicating diagnoses,drg
+583 - MASTECTOMY FOR MALIGNANCY W/O CC/MCC,Mastectomy for malignancy w/o cc/mcc,drg
+137 - MOUTH PROCEDURES W CC/MCC,Mouth procedures w cc/mcc,drg
+595 - MAJOR SKIN DISORDERS W MCC,Major skin disorders w mcc,drg
+157 - DENTAL & ORAL DISEASES W MCC,Dental & oral diseases w mcc,drg
+348 - ANAL & STOMAL PROCEDURES W CC,Anal & stomal procedures w cc,drg
+496 - LOCAL EXCISION & REMOVAL INT FIX DEVICES EXC HIP & FEMUR W CC,Local excision & removal int fix devices exc hip & femur w cc,drg
+497 - LOCAL EXCISION & REMOVAL INT FIX DEVICES EXC HIP & FEMUR W/O CC/MCC,Local excision & removal int fix devices exc hip & femur w/o cc/mcc,drg
+814 - RETICULOENDOTHELIAL & IMMUNITY DISORDERS W MCC,Reticuloendothelial & immunity disorders w mcc,drg
+828 - MYELOPROLIF DISORD OR POORLY DIFF NEOPL W MAJ O.R. PROC W/O CC/MCC,Myeloprolif disord or poorly diff neopl w maj o.r. proc w/o cc/mcc,drg
+842 - LYMPHOMA & NON-ACUTE LEUKEMIA W/O CC/MCC,Lymphoma & non-acute leukemia w/o cc/mcc,drg
+941 - O.R. PROC W DIAGNOSES OF OTHER CONTACT W HEALTH SERVICES W/O CC/MCC,O.r. proc w diagnoses of other contact w health services w/o cc/mcc,drg
+231 - CORONARY BYPASS W PTCA W MCC,Coronary bypass w ptca w mcc,drg
+262 - CARDIAC PACEMAKER REVISION EXCEPT DEVICE REPLACEMENT W/O CC/MCC,Cardiac pacemaker revision except device replacement w/o cc/mcc,drg
+901 - WOUND DEBRIDEMENTS FOR INJURIES W MCC,Wound debridements for injuries w mcc,drg
+259 - CARDIAC PACEMAKER DEVICE REPLACEMENT W/O MCC,Cardiac pacemaker device replacement w/o mcc,drg
+989 - NON-EXTENSIVE O.R. PROC UNRELATED TO PRINCIPAL DIAGNOSIS W/O CC/MCC,Non-extensive o.r. proc unrelated to principal diagnosis w/o cc/mcc,drg
+097 - NON-BACTERIAL INFECT OF NERVOUS SYS EXC VIRAL MENINGITIS W MCC,Non-bacterial infect of nervous sys exc viral meningitis w mcc,drg
+222 - CARDIAC DEFIB IMPLANT W CARDIAC CATH W AMI/HF/SHOCK W MCC,Cardiac defib implant w cardiac cath w ami/hf/shock w mcc,drg
+420 - HEPATOBILIARY DIAGNOSTIC PROCEDURES W MCC,Hepatobiliary diagnostic procedures w mcc,drg
+951 - OTHER FACTORS INFLUENCING HEALTH STATUS,Other factors influencing health status,drg
+132 - CRANIAL/FACIAL PROCEDURES W/O CC/MCC,Cranial/facial procedures w/o cc/mcc,drg
+934 - FULL THICKNESS BURN W/O SKIN GRFT OR INHAL INJ,Full thickness burn w/o skin grft or inhal inj,drg
+619 - O.R. PROCEDURES FOR OBESITY W MCC,O.r. procedures for obesity w mcc,drg
+098 - NON-BACTERIAL INFECT OF NERVOUS SYS EXC VIRAL MENINGITIS W CC,Non-bacterial infect of nervous sys exc viral meningitis w cc,drg
+102 - HEADACHES W MCC,Headaches w mcc,drg
+547 - CONNECTIVE TISSUE DISORDERS W/O CC/MCC,Connective tissue disorders w/o cc/mcc,drg
+255 - UPPER LIMB & TOE AMPUTATION FOR CIRC SYSTEM DISORDERS W MCC,Upper limb & toe amputation for circ system disorders w mcc,drg
+414 - CHOLECYSTECTOMY EXCEPT BY LAPAROSCOPE W/O C.D.E. W MCC,Cholecystectomy except by laparoscope w/o c.d.e. w mcc,drg
+077 - HYPERTENSIVE ENCEPHALOPATHY W MCC,Hypertensive encephalopathy w mcc,drg
+256 - UPPER LIMB & TOE AMPUTATION FOR CIRC SYSTEM DISORDERS W CC,Upper limb & toe amputation for circ system disorders w cc,drg
+686 - KIDNEY & URINARY TRACT NEOPLASMS W MCC,Kidney & urinary tract neoplasms w mcc,drg
+766 - CESAREAN SECTION W/O CC/MCC,Cesarean section w/o cc/mcc,drg
+201 - PNEUMOTHORAX W/O CC/MCC,Pneumothorax w/o cc/mcc,drg
+198 - INTERSTITIAL LUNG DISEASE W/O CC/MCC,Interstitial lung disease w/o cc/mcc,drg
